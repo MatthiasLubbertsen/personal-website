@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthias</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fp-dots.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.css"
+        integrity="sha512-pW8yu5iZIqHN6UUao8gXHi/98pqz+s31ybm7am1OPAqtuxsqzJ9tuspoMOTBXszrzqLhC5OvN0yef62Sg/0RPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="view view1">
-        <header><span class="title">Matthias Lubbertsen</span><span class="menu">Menu +</span></header>
-        <span class="name">Matthias</span>
-        <img class="arrow-down">
-    </div>
-    <div class="view view2">
-        <span class="iam">i am</span>
-        <div class="scroll 1">a teen coder - a hack clubber - a dog lover</div>
-        <div class="scroll 2">a duchy - a computer person - a cooking fan</div>
-    </div>
-    <div class="view view3">
-        <span class="projects">some of my projects</span>
-    </div>
-    <div class="view view4">
-        <!-- to be thought about -->
-    </div>
-    <div class="view view5">
-        <span class="talk">LET'S TALK</span>
-        <div class="contacts">
-            <div class="mail">mail</div>
-            <div class="slack">slack</div>
-            <div class="github">github</div>
-            <div class="linkedin">linkedin</div>
+    <header><span class="title">Matthias Lubbertsen</span><!-- make this a cool logo thingy -->
+        <span class="menu">Menu +</span>
+    </header>
+    <div id="fullpage">
+        <div class="section section1">
+            <span class="name">Matthias</span> <!-- prolly animate this-->
+            <a href="#iam" class="arrow-down material-symbols-outlined">
+                keyboard_arrow_down
+            </a>
+        </div>
+        <div class="section section2">
+            <span class="iam">i am</span>
+            <div class="scroll 1">a teen coder - a hack clubber - a dog lover - a inventor</div>
+            <div class="scroll 2">a duchy - a computer person - a cooking fan - a photographer</div>
+        </div>
+        <div class="section section3">
+            <span class="projects">some of my projects</span>
+        </div>
+        <div class="section section4">
+            <!-- to be thought about -->
+        </div>
+        <div class="section section5">
+            <span class="talk">LET'S TALK</span>
+            <div class="contacts">
+                <div class="mail">mail</div>
+                <div class="slack">slack</div>
+                <div class="github">github</div>
+                <div class="linkedin">linkedin</div>
+            </div>
+        </div>
+        <div class="section footer">
+            <span class="inspo">inspiration for website from <a href="https://pixel.melbourne">Pixel
+                    Melbourne</a></span>
         </div>
     </div>
-    <div class="footer">
-        <span class="inspo">inspiration for website from <a href="https://pixel.melbourne">Pixel Melbourne</a></span>
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.js"
+        integrity="sha512-zbZlsKnZf770P3zXuskyNgxhmdrrumJI5SRBmRVR01BRlEtTIZV63bdvmQhncu1BLD/jgFuRxH5apfFIwZ2Jhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,          // Enables the snap-scrolling behavior
+            navigation: true,             // Shows the dot navigation on the right side
+            navigationPosition: 'right',
+            credits: { enabled: false }, 
+            licenseKey: 'gplv3-license',
+
+
+            // Setup URL anchors for each section (allows sharing links to specific slides)
+            anchors: ['home', 'iam', 'projects', 'extra', 'contact', 'footer'],
+
+            // Visual options
+            scrollingSpeed: 700,          // Speed of the scrolling animation in milliseconds
+            css3: true,                   // Uses CSS3 hardware acceleration for smoother transitions
+
+            // Example callback: triggered when a section has fully loaded
+            afterLoad: function (origin, destination, direction) {
+                console.log("Loaded section: " + destination.anchor);
+            }
+        });
+    </script>
 </body>
+
 </html>

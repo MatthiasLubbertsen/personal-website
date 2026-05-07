@@ -1,0 +1,42 @@
+* {
+    --primary: #FF5354;
+    --secondary: #FFB5D2;
+    --tertiary: #0800FF;
+    --quaternary: #E4FE52;
+    --quinary: #E0C8BB;
+    --selection: #FF4C24;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    position: relative;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: var(--quaternary);
+    font-weight: bold;
+    z-index: 99;
+}
+
+::selection {
+    background: var(--selection);
+    color: black;
+}

@@ -1,0 +1,30 @@
+/* Container for the navigation dots */
+#fp-nav ul li a span {
+    /* Change the color of inactive dots */
+    background: var(--secondary) !important; 
+    
+    /* Change the size of the dots */
+    height: 6px !important;
+    width: 6px !important;
+    margin: -5px 0 0 -5px !important; /* adjust to keep centered if you change size */
+    
+    /* Add a smooth transition when they become active */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for the ACTIVE dot */
+#fp-nav ul li a.active span {
+    /* Change color of the dot for the current section */
+    background: var(--quaternary) !important;
+    
+    /* Optional: make the active dot slightly larger */
+    height: 10px !important;
+    width: 10px !important;
+    margin: -7px 0 0 -7px !important;
+}
+
+/* Optional: hide the tooltips if you don't want them, or style them */
+#fp-nav ul li .fp-tooltip {
+    color: var(--secondary) !important;
+    font-family: 'Poppins', sans-serif;
+}

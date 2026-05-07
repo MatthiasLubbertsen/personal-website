@@ -4,3 +4,5 @@ this is my personal website, wich im first creating in this figma: https://www.f
 the next step is recreating it in html, css and js, then hosting it on my nest server
 
 this website is inspired by https://pixel.melbourne
+
+https://github.com/alvarotrigo/fullpage.js/

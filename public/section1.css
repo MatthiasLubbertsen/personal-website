@@ -1,0 +1,18 @@
+.section.section1 .name {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 5rem;
+   font-weight: bold;
+}
+
+.section.section1 .arrow-down {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    color: var(--secondary);
+    text-decoration: none;
+}
