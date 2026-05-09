@@ -1,0 +1,52 @@
+.section.section2 .iam {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.scroll-ribbon {
+    position: absolute;
+    left: -10vh;
+    width: 120vh;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.ribbon-1 {
+    top: 40%;
+    transform: translateY(-50%) rotate(20deg);
+}
+
+.ribbon-2 {
+    top: 50%;
+    transform: translateY(-50%) rotate(-20deg);
+}
+
+.scrolling-text {
+    display: flex;
+    animation: slideText 25s linear infinite;
+}
+
+.scrolling-text.reverse {
+    animation: slideTextReverse 30s linear infinite;
+}
+
+@keyframes slideText {
+    0%  { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes slideTextReverse {
+    0%  { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}

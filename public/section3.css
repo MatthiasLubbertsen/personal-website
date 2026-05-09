@@ -1,0 +1,8 @@
+.section.section3 .projects {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+}
