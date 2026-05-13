@@ -1,3 +1,9 @@
+.section.section3 {
+    background-color: var(--quinary);
+    position: relative;
+    color: var(--tertiary)
+}
+
 .section.section3 .projects {
     position: absolute;
     left: 50%;

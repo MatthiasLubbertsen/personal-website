@@ -28,3 +28,27 @@
     color: var(--secondary) !important;
     font-family: 'Poppins', sans-serif;
 }
+
+body.fp-viewing-projects #fp-nav ul li a span {
+    background: var(--primary) !important; 
+}
+
+body.fp-viewing-projects #fp-nav ul li a.active span {
+    background: var(--quaternary) !important; /* pink */
+}
+
+body.fp-viewing-contact #fp-nav ul li a span {
+    background: var(--primary) !important; 
+}
+
+body.fp-viewing-contact #fp-nav ul li a.active span {
+    background: var(--quaternary) !important; /* pink */
+}
+
+body.fp-viewing-footer #fp-nav ul li a span {
+    background: var(--primary) !important; 
+}
+
+body.fp-viewing-footer #fp-nav ul li a.active span {
+    background: var(--quaternary) !important; /* pink */
+}

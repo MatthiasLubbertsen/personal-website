@@ -1,0 +1,12 @@
+.section.footer {
+    background-color: var(--secondary);
+    color: var(--primary);
+    height: 30vh;
+}
+
+.section.footer .inspo {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
