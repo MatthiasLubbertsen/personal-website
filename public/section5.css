@@ -34,7 +34,6 @@
     font-weight: bolder;
     position: relative;
     display: inline-block;
-    /* -- */
     text-shadow: 
         3px 3px 0 var(--secondary),
         -3px -3px 0 var(--secondary),
@@ -57,7 +56,6 @@
     left: 0;
     background-color: var(--primary);
     transition: width 0.3s ease-in-out;
-    /* -- */
     bottom: 0; 
     z-index: -1; 
 }
