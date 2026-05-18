@@ -2,3 +2,13 @@
     background-color: var(--tertiary);
     color: var(--secondary)
 }
+
+.section.section4 .livestats {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: "Gasoek One";
+}

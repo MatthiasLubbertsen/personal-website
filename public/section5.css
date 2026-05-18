@@ -16,8 +16,38 @@
 
 .section.section5 .contacts {
     position: absolute;
-    right: 20%;
+    right: 25%;
     top: 50%;
     transform: translate(50%, -50%);
-    /* display: flex; */
+}
+
+.section.section5 .contacts .contactoption {
+    display: flex;
+    align-items: center;
+}
+
+.section.section5 .contacts .contactoption a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: 1em;
+    font-weight: bolder;
+    position: relative;
+    display: inline-block;
+}
+
+/* animation effect */
+.section.section5 .contacts .contactoption a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease-in-out;
+}
+
+.section.section5 .contacts .contactoption a:hover::after {
+    width: 100%;
 }
