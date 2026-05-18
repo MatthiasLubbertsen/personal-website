@@ -2,3 +2,22 @@
     background-color: var(--secondary);
     color: var(--primary)
 }
+
+.section.section5 .talk {
+    position: absolute;
+    left: 2em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: lighter;
+    color: var(--tertiary);
+    font-size: 10rem;
+    font-family: "Gasoek One";
+}
+
+.section.section5 .contacts {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    /* display: flex; */
+}

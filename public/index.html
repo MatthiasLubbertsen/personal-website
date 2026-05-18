@@ -22,7 +22,7 @@
 
 <body>
     <header><span class="title">Matthias Lubbertsen</span> <!-- make this a cool logo thingy -->
-        <span class="menu">Menu +</span>
+        <!-- <span class="menu">Menu +</span> -->
     </header>
     <div id="fullpage">
         <div class="section section1">
@@ -41,24 +41,24 @@
             </div>
             <div class="scroll-ribbon ribbon-2">
                 <div class="scrolling-text reverse">
-                    <span>a duchy - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
-                    <span>a duchy - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
+                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
+                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
                 </div>
             </div>
         </div>
         <div class="section section3">
-            <span class="projects">some of my projects</span>
+            <span class="someprojects">some of my projects</span>
         </div>
         <div class="section section4">
             <!-- to be thought about -->
         </div>
         <div class="section section5">
-            <span class="talk">LET'S TALK</span>
+            <span class="talk">LET'S</br>TALK</span>
             <div class="contacts">
-                <div class="mail">mail</div>
-                <div class="slack">slack</div>
-                <div class="github">github</div>
-                <div class="linkedin">linkedin</div>
+                <div class="mail"><a href="mailto:matthias@lubbertsen.com">mail</a></div></br>
+                <div class="slack"><a href="https://hackclub.enterprise.slack.com/team/U0A55A4B21K" target="_blank">slack</a></div></br>
+                <div class="github"><a href="https://github.com/MatthiasLubbertsen" target="_blank">github</a></div></br>
+                <div class="linkedin"><a href="example.com" target="_blank">linkedin</a></div>
             </div>
         </div>
         <div class="section fp-auto-height footer">
@@ -77,7 +77,6 @@
             credits: { enabled: false }, 
             licenseKey: 'gplv3-license',
 
-
             // Setup URL anchors for each section (allows sharing links to specific slides)
             anchors: ['home', 'iam', 'projects', 'extra', 'contact', 'footer'],
 
@@ -86,9 +85,9 @@
             css3: true,                   // Uses CSS3 hardware acceleration for smoother transitions
 
             // Example callback: triggered when a section has fully loaded
-            afterLoad: function (origin, destination, direction) {
-                console.log("Loaded section: " + destination.anchor);
-            }
+            // afterLoad: function (origin, destination, direction) {
+            //     console.log("Loaded section: " + destination.anchor);
+            // }
         });
     </script>
 </body>

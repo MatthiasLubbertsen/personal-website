@@ -5,12 +5,15 @@
     transform: translate(-50%, -50%);
     font-size: 3rem;
     font-weight: bold;
+    font-family: 'Gasoek One';
+    font-weight: lighter;
 }
 
+/* find font for this */
 .scroll-ribbon {
     position: absolute;
-    left: -10vh;
-    width: 120vh;
+    left: 50%;
+    width: 200vw;
     background-color: var(--secondary);
     color: var(--primary);
     padding: 1rem 0;
@@ -24,13 +27,13 @@
 }
 
 .ribbon-1 {
-    top: 40%;
-    transform: translateY(-50%) rotate(20deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
 }
 
 .ribbon-2 {
     top: 50%;
-    transform: translateY(-50%) rotate(-20deg);
+    transform: translate(-50%, -50%) rotate(-20deg);
 }
 
 .scrolling-text {
