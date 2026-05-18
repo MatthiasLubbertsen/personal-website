@@ -41,8 +41,10 @@
             </div>
             <div class="scroll-ribbon ribbon-2">
                 <div class="scrolling-text reverse">
-                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
-                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member -&nbsp;</span>
+                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member
+                        -&nbsp;</span>
+                    <span>a duchie - a computer person - a cooking fan - a photographer - a support team member
+                        -&nbsp;</span>
                 </div>
             </div>
         </div>
@@ -56,14 +58,15 @@
             <span class="talk">LET'S</br>TALK</span>
             <div class="contacts">
                 <div class="mail"><a href="mailto:matthias@lubbertsen.com">mail</a></div></br>
-                <div class="slack"><a href="https://hackclub.enterprise.slack.com/team/U0A55A4B21K" target="_blank">slack</a></div></br>
-                <div class="github"><a href="https://github.com/MatthiasLubbertsen" target="_blank">github</a></div></br>
+                <div class="slack"><a href="https://hackclub.enterprise.slack.com/team/U0A55A4B21K"
+                        target="_blank">slack</a></div></br>
+                <div class="github"><a href="https://github.com/MatthiasLubbertsen" target="_blank">github</a></div>
+                </br>
                 <div class="linkedin"><a href="example.com" target="_blank">linkedin</a></div>
             </div>
         </div>
         <div class="section fp-auto-height footer">
-            <div class="inspo">inspiration for website from&nbsp;<a href="https://pixel.melbourne">Pixel
-                    Melbourne</a></div>
+            <div class="footer">©&nbsp;<span id="year">2026</span>&nbsp;Matthias Lubbertsen. All rights reserved.</div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.js"
@@ -74,7 +77,7 @@
             autoScrolling: true,          // Enables the snap-scrolling behavior
             navigation: true,             // Shows the dot navigation on the right side
             navigationPosition: 'right',
-            credits: { enabled: false }, 
+            credits: { enabled: false },
             licenseKey: 'gplv3-license',
 
             // Setup URL anchors for each section (allows sharing links to specific slides)
@@ -88,6 +91,10 @@
             // afterLoad: function (origin, destination, direction) {
             //     console.log("Loaded section: " + destination.anchor);
             // }
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
         });
     </script>
 </body>
