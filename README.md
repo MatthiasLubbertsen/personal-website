@@ -6,3 +6,10 @@ the next step is recreating it in html, css and js, then hosting it on my nest s
 this website is inspired by https://pixel.melbourne
 
 ~~https://github.com/alvarotrigo/fullpage.js/~~
+
+# stats ideas
+* liwan/ackee total stats
+* music stats (last.fm/spotify)
+* github stats
+* support tickets stats
+* 
