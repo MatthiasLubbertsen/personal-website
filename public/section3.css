@@ -7,10 +7,35 @@
 .section.section3 .someprojects {
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 10%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
     font-weight: lighter;
     font-family: "Gasoek One";
+    z-index: 9999;
 }
 
+.section.section3 .slide {
+    position: relative;
+}
+
+.section.section3 .slide .projectname {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: "Gasoek One";
+    color: var(--primary)
+}
+
+.section.section3 .slide .projectimage {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}

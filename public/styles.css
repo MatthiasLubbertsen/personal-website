@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 
 * {
-    --primary: #FF5354;
+    /* --primary: #FF5354;
     --secondary: #FFB5D2;
     --tertiary: #0800FF;
     --quaternary: #E4FE52;
     --quinary: #E0C8BB;
-    --selection: #FF4C24;
+    --selection: #FF4C24; */
+    --primary: #BDD9BF;
+    --secondary: #2E4052;
+    --tertiary: #FFC857;
+    --quaternary: #FFFFFF;
+    --quinary: #412234;
+    --selection: #523646;
 }
 
 body {
