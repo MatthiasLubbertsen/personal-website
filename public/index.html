@@ -48,6 +48,9 @@
         </div>
         <div class="section section3">
             <span class="someprojects">some of my projects</span>
+            <div class="slide">Horizontal Slide 3.1</div>
+            <div class="slide">Horizontal Slide 3.2</div>
+            <div class="slide">Horizontal Slide 3.3</div>
         </div>
         <div class="section section4">
             <span class="livestats">live stats</span>
@@ -65,16 +68,23 @@
             <div class="footer">©&nbsp;<span id="year">2026</span>&nbsp;Matthias Lubbertsen. All rights reserved.</div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.js"
-        integrity="sha512-zbZlsKnZf770P3zXuskyNgxhmdrrumJI5SRBmRVR01BRlEtTIZV63bdvmQhncu1BLD/jgFuRxH5apfFIwZ2Jhg=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.extensions.min.js"
+        integrity="sha512-YukosoCiwXznv72ZrETvFbTczwKtjibpym+vIxULfvwbZbMyLxLzILimYSCrOO83SEkyLWZlCbgsHtyt6CWkqQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="livestats.js" defer></script> -->
     <script>
         new fullpage('#fullpage', {
             autoScrolling: true,          // Enables the snap-scrolling behavior
             navigation: true,             // Shows the dot navigation on the right side
             navigationPosition: 'right',
+            //navigationTooltips: ['Matthias', 'I am', 'Projects', 'Live Stats', 'Contact', 'Footer'], // Tooltips for each section
             credits: { enabled: false },
             licenseKey: 'gplv3-license',
+            scrollHorizontally: true,
+            keyboardScrolling: true,
+            lazyLoading: true,
+            controlArrows: false,
+            slidesNavigation: true,
 
             // Setup URL anchors for each section (allows sharing links to specific slides)
             anchors: ['home', 'iam', 'projects', 'extra', 'contact', 'footer'],
@@ -83,15 +93,48 @@
             scrollingSpeed: 700,          // Speed of the scrolling animation in milliseconds
             css3: true,                   // Uses CSS3 hardware acceleration for smoother transitions
 
-            // Example callback: triggered when a section has fully loaded
-            // afterLoad: function (origin, destination, direction) {
-            //     console.log("Loaded section: " + destination.anchor);
-            // }
+            afterLoad: function (origin, destination) {
+                document.body.classList.toggle('hide-vertical-nav', destination.index + 1 === 3);
+            },
+
+            afterSlideLoad: function (section, origin, destination, direction) {
+                document.body.classList.toggle('hide-vertical-nav', section.index + 1 === 3);
+            },
+
+            onLeave: function (origin, destination, direction) {
+                var horizontalSectionIndex = 3;
+
+                document.body.classList.toggle('hide-vertical-nav', destination.index + 1 === horizontalSectionIndex);
+
+                if (origin.index + 1 === horizontalSectionIndex) {
+                    var activeSlide = origin.item.querySelector('.fp-slide.active');
+                    var totalSlides = origin.item.querySelectorAll('.fp-slide').length;
+
+                    if (!activeSlide || totalSlides === 0) {
+                        return;
+                    }
+
+                    var slideIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
+
+                    if (direction === 'down' && slideIndex < totalSlides - 1) {
+                        fullpage_api.moveSlideRight();
+                        return false;
+                    }
+
+                    if (direction === 'up' && slideIndex > 0) {
+                        fullpage_api.moveSlideLeft();
+                        return false;
+                    }
+                }
+            },
+
+            
         });
         document.addEventListener('DOMContentLoaded', function () {
             const yearEl = document.getElementById('year');
             if (yearEl) yearEl.textContent = new Date().getFullYear();
         });
+        
     </script>
 </body>
 

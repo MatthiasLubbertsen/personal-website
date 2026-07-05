@@ -12,6 +12,23 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Horizontal slide navigation in section 3 */
+.section.section3 .fp-slidesNav {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: max-content !important;
+    right: auto !important;
+    margin-left: 0 !important;
+}
+
+.section.section3 .fp-slidesNav ul li a span {
+    background: var(--primary) !important;
+}
+
+.section.section3 .fp-slidesNav ul li a.active span {
+    background: var(--quaternary) !important;
+}
+
 /* Style for the ACTIVE dot */
 #fp-nav ul li a.active span {
     /* Change color of the dot for the current section */
@@ -29,12 +46,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body.fp-viewing-projects #fp-nav ul li a span {
+body[class*="fp-viewing-projects"] #fp-nav ul li a span {
     background: var(--primary) !important; 
 }
 
-body.fp-viewing-projects #fp-nav ul li a.active span {
+body[class*="fp-viewing-projects"] #fp-nav ul li a.active span {
     background: var(--quaternary) !important; /* pink */
+}
+
+body[class*="fp-viewing-projects"] #fp-nav,
+body.hide-vertical-nav #fp-nav {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 body.fp-viewing-contact #fp-nav ul li a span {
