@@ -1,5 +1,5 @@
-const iamText = document.querySelector('.section2 .iam');
-const defaultIamText = iamText?.textContent || 'hover over an image!';
+const iamText = document.querySelector('.section2 .centertitle');
+const defaultIamText = iamText?.innerHTML || 'hover over <br> an image!';
 
 const setPosition = (target, x, y) => {
     target.dataset.x = x;
@@ -9,7 +9,7 @@ const setPosition = (target, x, y) => {
 
 const setIamText = text => {
     if (iamText) {
-        iamText.textContent = text;
+        iamText.innerHTML = text;
     };
 };
 

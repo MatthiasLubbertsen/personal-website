@@ -1,13 +1,29 @@
 .section.section2 .iam {
     position: absolute;
     left: 50%;
+    top: 37%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: lighter;
+    /* font-family: 'Gasoek One'; */
+    font-weight: lighter;
+    text-align: center;
+    z-index: 2;
+    user-select: none;
+}
+
+.section.section2 .centertitle {
+    position: absolute;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: 3rem;
+    font-weight: lighter;
     font-family: 'Gasoek One';
     font-weight: lighter;
+    text-align: center;
     z-index: 2;
+    user-select: none;
 }
 
 .section.section2 .iamImages {
@@ -40,13 +56,13 @@
 .section.section2 .iamImages .iamImage:nth-child(4) { left: calc(50% + 20vw); top: calc(50% - 20vh); }
 .section.section2 .iamImages .iamImage:nth-child(5) { left: calc(50% - 39vw); top: calc(50% - 1vh); }
 .section.section2 .iamImages .iamImage:nth-child(6) { left: calc(50% + 23vw); top: calc(50% - 8vh); }
-.section.section2 .iamImages .iamImage:nth-child(7) { left: calc(50% - 2vw); top: calc(50% - 40vh); }
+.section.section2 .iamImages .iamImage:nth-child(7) { left: calc(50% - 2vw); top: calc(50% - 42vh); }
 .section.section2 .iamImages .iamImage:nth-child(8) { left: calc(50% + 0vw); top: calc(50% + 18vh); }
 .section.section2 .iamImages .iamImage:nth-child(9) { left: calc(50% - 20vw); top: calc(50% + 21vh); }
 .section.section2 .iamImages .iamImage:nth-child(10) { left: calc(50% - 7vw); top: calc(50% + 26vh); }
 .section.section2 .iamImages .iamImage:nth-child(11) { left: calc(50% + 19vw); top: calc(50% + 14vh); }
 .section.section2 .iamImages .iamImage:nth-child(12) { left: calc(50% - 45vw); top: calc(50% + 10vh); }
-.section.section2 .iamImages .iamImage:nth-child(13) { left: calc(50% - 22vw); top: calc(50% - 42vh); }
+.section.section2 .iamImages .iamImage:nth-child(13) { left: calc(50% - 22vw); top: calc(50% - 43vh); }
 .section.section2 .iamImages .iamImage:nth-child(14) { left: calc(50% - 28vw); top: calc(50% + 25vh); }
 .section.section2 .iamImages .iamImage:nth-child(15) { left: calc(50% + 22vw); top: calc(50% - 40vh); }
 
