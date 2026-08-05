@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="section4.css">
     <link rel="stylesheet" href="section5.css">
     <link rel="stylesheet" href="footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js" defer></script>
+    <script src="section2.js" defer></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.css"
@@ -33,7 +35,7 @@
         </div>
         <div class="section section2">
             <span class="iam">i am</span>
-            <div class="scroll-ribbon ribbon-1">
+            <!-- <div class="scroll-ribbon ribbon-1">
                 <div class="scrolling-text">
                     <span>a teen - a coder - a hack clubber - a dog lover - an inventor - a food lover - a web designer -
                         a Jesus follower - a lot more&nbsp;</span>
@@ -48,16 +50,42 @@
                     <span>a duchie - a computer person - a cooking fan - a photographer - a support team member - a
                         reader - a lights lover - (somewhat) an artist - a lot more&nbsp;</span>
                 </div>
+            </div> -->
+            <div class="iamImages">
+                <img src="https://picsum.photos/300/200" data-hover-text="coder" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="Hack Clubber" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="web designer" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="photographer" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="food lover" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="dog lover" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="inventor" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="reader" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="computer person" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="support team member" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="lights lover" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="artist" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="Jesus follower" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="teen" class="iamImage" draggable="false">
+                <img src="https://picsum.photos/300/200" data-hover-text="a lot more" class="iamImage" draggable="false">
             </div>
         </div>
         <div class="section section3">
             <span class="someprojects">some of my projects</span>
-            <div class="slide"><div class="projectname">this website</div>
-        <img src="https://cdn.hackclub.com/019f33bc-e8fe-7e86-aa8b-952bc64efb22/Schermafbeelding%202026-07-05%20212341.png" alt="a screenshot of matthiaz.dev" class="projectimage"></div>
-            <div class="slide"><div class="projectname">HatGPT</div>
-        <img src="https://cdn.hackclub.com/019f33be-cd37-7165-85e6-4b5116a54a18/Schermafbeelding%202026-07-05%20212550.png" alt="a screenshot of HatGPT" class="projectimage"></div>
-            <div class="slide"><div class="projectname">Slack Macros</div>
-        <img src="https://cdn.hackclub.com/019f33c1-6d4d-74b2-9f74-7a11956b8f43/Schermafbeelding%202026-07-05%20212839.png" alt="a screenshot of Slack Macros" class="projectimage"></div>
+            <div class="slide">
+                <div class="projectname">this website</div>
+                <img src="https://cdn.hackclub.com/019f33bc-e8fe-7e86-aa8b-952bc64efb22/Schermafbeelding%202026-07-05%20212341.png"
+                    alt="a screenshot of matthiaz.dev" class="projectimage">
+            </div>
+            <div class="slide">
+                <div class="projectname">HatGPT</div>
+                <img src="https://cdn.hackclub.com/019f33be-cd37-7165-85e6-4b5116a54a18/Schermafbeelding%202026-07-05%20212550.png"
+                    alt="a screenshot of HatGPT" class="projectimage">
+            </div>
+            <div class="slide">
+                <div class="projectname">Slack Macros</div>
+                <img src="https://cdn.hackclub.com/019f33c1-6d4d-74b2-9f74-7a11956b8f43/Schermafbeelding%202026-07-05%20212839.png"
+                    alt="a screenshot of Slack Macros" class="projectimage">
+            </div>
         </div>
         <div class="section section4">
             <span class="livestats">live stats</span>
@@ -138,13 +166,13 @@
                 }
             },
 
-            
+
         });
         document.addEventListener('DOMContentLoaded', function () {
             const yearEl = document.getElementById('year');
             if (yearEl) yearEl.textContent = new Date().getFullYear();
         });
-        
+
     </script>
 </body>
 

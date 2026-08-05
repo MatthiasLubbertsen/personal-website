@@ -1,16 +1,57 @@
 .section.section2 .iam {
     position: absolute;
     left: 50%;
-    top: 15%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: 'Gasoek One';
     font-weight: lighter;
+    z-index: 2;
 }
 
+.section.section2 .iamImages {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    clip-path: inset(0 5.5rem 0 0);
+    z-index: 1;
+}
+
+.section.section2 .iamImage {
+    position: absolute;
+    width: min(18vw, 2060px);
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: element;
+    touch-action: none;
+}
+
+.section.section2 .iamImage:active {
+    cursor: grabbing;
+}
+
+.section.section2 .iamImages .iamImage:nth-child(1) { left: calc(50% - 46vw); top: calc(50% - 25vh); }
+.section.section2 .iamImages .iamImage:nth-child(2) { left: calc(50% - 34vw); top: calc(50% - 38vh); }
+.section.section2 .iamImages .iamImage:nth-child(3) { left: calc(50% + 12vw); top: calc(50% - 45vh); }
+.section.section2 .iamImages .iamImage:nth-child(4) { left: calc(50% + 20vw); top: calc(50% - 20vh); }
+.section.section2 .iamImages .iamImage:nth-child(5) { left: calc(50% - 39vw); top: calc(50% - 1vh); }
+.section.section2 .iamImages .iamImage:nth-child(6) { left: calc(50% + 23vw); top: calc(50% - 8vh); }
+.section.section2 .iamImages .iamImage:nth-child(7) { left: calc(50% - 2vw); top: calc(50% - 40vh); }
+.section.section2 .iamImages .iamImage:nth-child(8) { left: calc(50% + 0vw); top: calc(50% + 18vh); }
+.section.section2 .iamImages .iamImage:nth-child(9) { left: calc(50% - 20vw); top: calc(50% + 21vh); }
+.section.section2 .iamImages .iamImage:nth-child(10) { left: calc(50% - 7vw); top: calc(50% + 26vh); }
+.section.section2 .iamImages .iamImage:nth-child(11) { left: calc(50% + 19vw); top: calc(50% + 14vh); }
+.section.section2 .iamImages .iamImage:nth-child(12) { left: calc(50% - 45vw); top: calc(50% + 10vh); }
+.section.section2 .iamImages .iamImage:nth-child(13) { left: calc(50% - 22vw); top: calc(50% - 42vh); }
+.section.section2 .iamImages .iamImage:nth-child(14) { left: calc(50% - 28vw); top: calc(50% + 25vh); }
+.section.section2 .iamImages .iamImage:nth-child(15) { left: calc(50% + 22vw); top: calc(50% - 40vh); }
+
 /* find font for this */
-.scroll-ribbon {
+/* .scroll-ribbon {
     position: absolute;
     left: 50%;
     width: 200vw;
@@ -53,4 +94,4 @@
 @keyframes slideTextReverse {
     0%  { transform: translateX(-50%); }
     100% { transform: translateX(0); }
-}
+} */
