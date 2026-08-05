@@ -1,1 +1,2 @@
 - [ ] font for 'I am:' in section2
+- [ ] font for .projectname in section3

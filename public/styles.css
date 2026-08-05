@@ -46,5 +46,5 @@ header {
 
 ::selection {
     background: var(--selection);
-    color: black;
+    color: white;
 }

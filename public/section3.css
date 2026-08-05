@@ -1,5 +1,5 @@
 .section.section3 {
-    background-color: var(--quinary);
+    background-color: var(--tertiary);
     position: relative;
     color: var(--tertiary)
 }
@@ -10,6 +10,7 @@
     top: 10%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
+    color: var(--secondary);
     font-weight: lighter;
     font-family: "Gasoek One";
     z-index: 9999;
@@ -26,8 +27,8 @@
     transform: translate(-50%, -50%);
     font-size: 2rem;
     font-weight: lighter;
-    font-family: "Gasoek One";
-    color: var(--primary)
+    /* font-family: "Gasoek One"; */
+    color: var(--secondary);
 }
 
 .section.section3 .slide .projectimage {
