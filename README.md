@@ -16,3 +16,9 @@ Because I vibeslobbed my first one and my second and my third when I was 12, the
 - I love css
 - DO NOT USE `!important` IF IT'S NOT IMPORTANT (I learnt this the hard way (there are only 5 `!important`s in one section))
 - if you say `danke` to Copilot it says `Gerne.`
+
+# how to run
+- clone the repo
+- install pm2: `npm install pm2 -g`
+- run `pm2 serve public <port> --name matthiaz.dev`
+- it's running on `localhost:<port>` now!
