@@ -1,15 +1,18 @@
-# my personal website
-this is my personal website, wich im first creating in this figma: https://www.figma.com/design/59dwWiePW9ogbLyu3bql4h/Personal-Website?node-id=0-1&p=f&t=fViv4074mXMEV331-0
+# matthiaz.dev - my personal website
+I created my personal website with FullPage.js, I designed it first in Figma (my first time doing that). It's deployed on my first own domain, using my own Linux server.
 
-the next step is recreating it in html, css and js, then hosting it on my nest server
+## how I did this
+- search inspo ([https://pixel.melbourne](https://pixel.melbourne))
+- make it in Figma ([link](https://www.figma.com/design/59dwWiePW9ogbLyu3bql4h/Personal-Website?node-id=0-1&t=052SlVdlQSNw6DVk-1))
+- implement it with FullPage.js (I don't get ts so AI did the FullPage.js part), html and css (I LOVE WEBDEV)
+- host
+- ship
 
-this website is inspired by https://pixel.melbourne
+## why
+Because I vibeslobbed my first one and my second and my third when I was 12, then it was `hi im matthias` and NOW it's a real personal website!
 
-~~https://github.com/alvarotrigo/fullpage.js/~~
-
-# stats ideas
-* liwan/ackee total stats
-* music stats (last.fm/spotify)
-* github stats
-* support tickets stats
-* 
+## what I learnt
+- I would never use FullPage.js again
+- I love css
+- DO NOT USE `!important` IF IT'S NOT IMPORTANT (I learnt this the hard way (there are only 5 `!important`s in one section))
+- if you say `danke` to Copilot it says `Gerne.`
