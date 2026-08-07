@@ -1,7 +1,7 @@
 /* Container for the navigation dots */
 #fp-nav ul li a span {
-    /* Change the color of inactive dots */
-    background: var(--secondary) !important; 
+    /* Vertical nav dots: non-active state */
+    background: var(--secondary) !important; /* section1/general */
     
     /* Change the size of the dots */
     height: 6px !important;
@@ -12,7 +12,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-/* Horizontal slide navigation in section 3 */
+/* Section 3 slide dots: non-active state */
 .section.section3 .fp-slidesNav {
     left: 50% !important;
     transform: translateX(-50%) !important;
@@ -22,16 +22,23 @@
 }
 
 .section.section3 .fp-slidesNav ul li a span {
-    background: var(--primary) !important;
+    /* Section 3 slide dots use the same size as the vertical dots */
+    height: 6px !important;
+    width: 6px !important;
+    margin: -5px 0 0 -5px !important;
+    background: var(--secondary) !important;
 }
 
 .section.section3 .fp-slidesNav ul li a.active span {
+    /* Section 3 slide dots: active state */
     background: var(--quaternary) !important;
+    height: 10px !important;
+    width: 10px !important;
+    margin: -7px 0 0 -7px !important;
 }
 
-/* Style for the ACTIVE dot */
+/* Vertical nav dots: active state */
 #fp-nav ul li a.active span {
-    /* Change color of the dot for the current section */
     background: var(--quaternary) !important;
     
     /* Optional: make the active dot slightly larger */
@@ -40,10 +47,20 @@
     margin: -7px 0 0 -7px !important;
 }
 
-/* Optional: hide the tooltips if you don't want them, or style them */
+/* Tooltips for the vertical nav dots */
 #fp-nav ul li .fp-tooltip {
     color: var(--secondary) !important;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Section 2 vertical nav dots: non-active state */
+body.fp-viewing-section2 #fp-nav ul li a span {
+    background: var(--tertiary) !important;
+}
+
+/* Section 2 vertical nav dots: active state */
+body.fp-viewing-section2 #fp-nav ul li a.active span {
+    background: var(--quaternary) !important;
 }
 
 body[class*="fp-viewing-projects"] #fp-nav ul li a span {
@@ -61,18 +78,22 @@ body.hide-vertical-nav #fp-nav {
     pointer-events: none;
 }
 
+/* Section 4 vertical nav dots: non-active state */
 body.fp-viewing-contact #fp-nav ul li a span {
     background: var(--primary) !important; 
 }
 
+/* Section 4 vertical nav dots: active state */
 body.fp-viewing-contact #fp-nav ul li a.active span {
     background: var(--quaternary) !important; /* pink */
 }
 
+/* Footer vertical nav dots: non-active state */
 body.fp-viewing-footer #fp-nav ul li a span {
     background: var(--primary) !important; 
 }
 
+/* Footer vertical nav dots: active state */
 body.fp-viewing-footer #fp-nav ul li a.active span {
     background: var(--quaternary) !important; /* pink */
 }
